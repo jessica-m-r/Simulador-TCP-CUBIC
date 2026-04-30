@@ -27,7 +27,7 @@ Donde:
 ## Aclaraciones
 Para determinar el valor de C y cuanto deberia reducir la ventana se consulto a la IA, los valores sugeridos fueron de 0.4 y reducir un 0.7 la ventana ante una congestión.
 [Fuente documentación](https://datatracker.ietf.org/doc/html/rfc9438#cubic-inc)
-En el punto 3.4. igual se menciona que el factor para derecer la ventana es de 0.7.
+En el punto 3.4. igual se menciona que el factor para decrecer la ventana es de 0.7.
 ## Uso
 En la consola del navegador ejecutar lo siguiente
 ```
