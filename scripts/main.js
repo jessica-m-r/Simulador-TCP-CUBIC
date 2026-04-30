@@ -14,10 +14,8 @@ class Main {
                     console.log("Nueva perdida durante la recuperación");
                     this.verificar(this.perdidaPaquetes());
                 }else{
-                    this.tamañoVentana = this.cubic.retornarTamañoVentana();
-                    let recuperado = this.cubic.recuperado();
                     this.verificar(this.generarPaquetes());
-                    if(recuperado){ 
+                    if(this.cubic.recuperado()){ 
                         console.log("Recuperación completa");
                     }else{
                         console.log("Recuperando tamaño");
@@ -28,7 +26,6 @@ class Main {
                     console.log("Generando perdida Paquetes");
                     this.verificar(this.perdidaPaquetes());
                 }else{
-                    this.tamañoVentana = this.cubic.agrandarVentana();
                     this.verificar(this.generarPaquetes());
                 }
                 this.tamañoVentana = this.cubic.getVentana();
@@ -75,9 +72,7 @@ class Main {
         if(enOrden){
             this.paquetes.push(lista);
             console.log("Paquetes enviados correctamente");
-            if(this.cubic.recuperado() || this.cubic.ventanaAnterior === 0){ 
-                this.tamañoVentana = this.cubic.agrandarVentana();
-            }
+            this.tamañoVentana = this.cubic.retornarTamañoVentana();
         }else{
             this.algoritmoCubic();
         }

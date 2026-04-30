@@ -26,18 +26,12 @@ class Cubic {
     }
     recuperado(){
         let res = false;
-        if(this.tamañoVentana === this.ventanaAnterior){
+        if(this.tamañoVentana >= this.ventanaAnterior){
             res = true;
         }
         if(this.ventanaAnterior === 0){
             res = true;
         }
         return res;
-    }
-    agrandarVentana(){
-        let random = Math.floor(Math.random() * 10) + 1;
-        this.tamañoVentana += random;
-        console.log("Tamaño de la ventana al agrandar: " + this.tamañoVentana);
-        return this.tamañoVentana;
     }
 }

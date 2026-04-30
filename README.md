@@ -25,9 +25,9 @@ Donde:
 - C = 0.4 un valor estatico. 
 - t es el número de grupos desde la última pérdida.
 ## Aclaraciones
-Para determinar el valor de C y cuanto deberia reducir la ventana se consulto a la IA, los valores sugeridos fueron de 0.4 y reducir un 0.7 la ventana ante una congestión.
-[Fuente documentación](https://datatracker.ietf.org/doc/html/rfc9438#cubic-inc)
-En el punto 3.4. igual se menciona que el factor para decrecer la ventana es de 0.7.
+- Se consulto a la IA para comprender mejor el funcionamiento de la formula y determinar los valores de C como 0.4 y la reducción de ventana a 0.7. 
+- De igual manera se busco documentación para respaldar estos valores. [Fuente documentación](https://datatracker.ietf.org/doc/html/rfc9438#cubic-inc)
+En el punto 3.4. igual se menciona que el factor para decrecer la ventana es de 0.7 y en el punto 5.1 menciona el valor de C para CUBIC.
 ## Uso
 En la consola del navegador ejecutar lo siguiente
 ```
